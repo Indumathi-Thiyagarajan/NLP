@@ -1,5 +1,5 @@
-Attention helos language model to understand whole context of the text instead of one word at a time. 
-Embeddings -> words become numbers. Words with similar category are located close to each other in coordinates. 
+* Attention helos language model to understand whole context of the text instead of one word at a time. 
+* Embeddings -> words become numbers. Words with similar category are located close to each other in coordinates. 
 One ambiguity with these embeddings is, when consider just a word chances are it might not be able to know what context word refers to. 
 Example : apple a brand vs apple a fruit both if consider just the word will be located closer in coord which is not right. 
 Inorder to sovle the problem attention mechanism will be helpful where it considers other words in sentence to know entire meaning. 
