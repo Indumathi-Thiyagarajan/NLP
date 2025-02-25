@@ -23,7 +23,7 @@ ________________________________________________________________________________
               * In the below image u can consider that, all words of a sentence are like plannets in a galaxy. words that add categorical meaning to the sentence or words that are similar are pulled together or let say gravitated together. 
               Below example if the sentence is apple released a new phone. Phone and apple will be attracted closer that other words
               
-              ![image](https://github.com/user-attachments/assets/0bd907fc-de02-48db-9070-25083a148c07)
+![image](https://github.com/user-attachments/assets/0bd907fc-de02-48db-9070-25083a148c07)
 
 *Linear Transformation*:
 
@@ -32,7 +32,7 @@ ________________________________________________________________________________
        In the below image, if we apply linear transformation to the embedding (left one), it will turn into middle and if we again apply linear transformation it turns as right most. **A GOOD EMBEDDING IS ONE THAT SEPERATES or DISTINGUISHES DIFFERNT CATEGORIES CLEARLY**. 
        In the below, we see the right most seperates the apples well, so embedding score for that one is the best. 
        
-       ![image](https://github.com/user-attachments/assets/7f89fc1c-84bf-454a-9af4-76302213eef2)
+![image](https://github.com/user-attachments/assets/7f89fc1c-84bf-454a-9af4-76302213eef2)
 
 
 *Single-Head Attention*:
@@ -93,13 +93,13 @@ ________________________________________________________________________________
                      Value ("on") = [0.5, 0.3], Query ("on") = [0.2, 0.4], Key ("on") = [0.1, 0.4]
                      Value ("mat") = [0.8, 0.5], Query ("mat") = [0.4, 0.5], Key ("mat") = [0.7, 0.3]
        
-                     ![image](https://github.com/user-attachments/assets/049f8931-1bab-4c8c-aaa4-28718fff868b)
+![image](https://github.com/user-attachments/assets/049f8931-1bab-4c8c-aaa4-28718fff868b)
        
        
        4) **Weighted Sum of Values:**
           The weighted sum of values is calculated by multiplying each word’s value (embedding) by its corresponding attention weight (after applying softmax to the attention scores).
           
-          ![image](https://github.com/user-attachments/assets/d7d5a78c-ddb9-4429-b76c-f0c17a87c770)
+![image](https://github.com/user-attachments/assets/d7d5a78c-ddb9-4429-b76c-f0c17a87c770)
 
 
 *Multi head attention Mechanism*:
