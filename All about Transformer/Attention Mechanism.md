@@ -2,13 +2,13 @@
 
 **SUMMARY** 
 
-⚡️Each head is focusing on each word. For each attention head we create one query and multiple key and values. Consider the sentence " Cat sat on the mat". 
-⚡️Query is asking how does this word eg: CAT relate to the other words of the sentence. So we ask this query to each word of the sentence and multiple keys and values are found.  
-⚡️Key is the answer to query eg: The is not related to CAT. 
-⚡️Value are embeddings or 2 dimensional vectors of actual word eg: the belongs to coordinates [0.5,0.2]. 
-⚡️Attention score is calculated with dot product of query and all key vectors of the sentence which then passed through softmax to get probabilitic value between 0 and 1. 
-⚡️After we have the attention scores (probabilities), we use them to compute the weighted sum of values which is attention socre multiplied by corresponding embedding. The higher the attention score, the more weight that word's value will contribute. We do this for each word in the sentence, producing a weighted sum of values that represents how much "attention" the word is paying to the other words. So the weighted sum of values for a single word will be based on all other words in the sentence, not just the ones it is directly compared with. For instance, the weighted sum for "cat" considers how much attention "cat" should pay to "the," "sat," "on," and "mat." This is the process for single head attention mechanism.
-⚡️Multi-head attention involves multiple sets of queries, keys, and values, where each head learns to focus on different relationships (e.g., syntax, semantics). The outputs of all heads are concatenated and passed through a linear transformation to produce the final output.
+       ⚡️Each head is focusing on each word. For each attention head we create one query and multiple key and values. Consider the sentence " Cat sat on the mat". 
+       ⚡️Query is asking how does this word eg: CAT relate to the other words of the sentence. So we ask this query to each word of the sentence and multiple keys and values are found.  
+       ⚡️Key is the answer to query eg: The is not related to CAT. 
+       ⚡️Value are embeddings or 2 dimensional vectors of actual word eg: the belongs to coordinates [0.5,0.2]. 
+       ⚡️Attention score is calculated with dot product of query and all key vectors of the sentence which then passed through softmax to get probabilitic value between 0 and 1. 
+       ⚡️After we have the attention scores (probabilities), we use them to compute the weighted sum of values which is attention socre multiplied by corresponding embedding. The higher the attention score, the more weight that word's value will contribute. We do this for each word in the sentence, producing a weighted sum of values that represents how much "attention" the word is paying to the other words. So the weighted sum of values for a single word will be based on all other words in the sentence, not just the ones it is directly compared with. For instance, the weighted sum for "cat" considers how much attention "cat" should pay to "the," "sat," "on," and "mat." This is the process for single head attention mechanism.
+       ⚡️Multi-head attention involves multiple sets of queries, keys, and values, where each head learns to focus on different relationships (e.g., syntax, semantics). The outputs of all heads are concatenated and passed through a linear transformation to produce the final output.
 
 ___________________________________________________________________________________________________________________________
 
