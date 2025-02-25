@@ -87,19 +87,21 @@ In the below, we see the right most seperates the apples well, so embedding scor
 
 
 **Multi head attention Mechanism**:
-       In multi-head attention, we create multiple sets of queries (Q), keys (K), and values (V), each from the same input embeddings, but with different weight matrices. These weight matrices allow each head to focus on different aspects of the sentence. Each head will have different Q, K, and V matrices, so even though they are using the same input, each head will focus on different parts of the input.
-Now, each head will perform the above attention mechanism separately but in parallel.
-
-For simplicity, let's assume we are using two heads in this example.
-
-Head 1 might give a context vector [0.2, 0.3] for "cat" (focusing on syntax).(like grammatical relationships between words).
-Head 2 might give a context vector [0.6, 0.4] for "cat" (focusing on semantics).(like meaning-based relationships between words).
-Now, we combine these vectors from both heads into a single vector by concatenating them (in this case, [0.2, 0.3, 0.6, 0.4]). This final vector gives us a richer, more complete representation of "cat" because it combines both syntactical and semantic information.
-
-Once the outputs of all heads are combined, they are passed through a linear transformation (via a weight matrix) to project the concatenated vectors back to the desired dimensionality. The output of this process is the final, context-aware representation of each word, which can then be passed on to the next layer of the model (like in a Transformer architecture).
-
-In multihead attention all the above steps, transformations, 
-![image](https://github.com/user-attachments/assets/e1b298c9-4fd8-42c7-a25c-7b058a8af0ae)
+              
+              In multi-head attention, we create multiple sets of queries (Q), keys (K), and values (V), each from the same input embeddings, but with different weight matrices. These weight matrices allow each head to focus on different aspects of the sentence. Each head will have different Q, K, and V matrices, so even though they are using the same input, each head will focus on different parts of the input.
+       
+       Now, each head will perform the above attention mechanism separately but in parallel.
+       
+       For simplicity, let's assume we are using two heads in this example.
+       
+       Head 1 might give a context vector [0.2, 0.3] for "cat" (focusing on syntax).(like grammatical relationships between words).
+       Head 2 might give a context vector [0.6, 0.4] for "cat" (focusing on semantics).(like meaning-based relationships between words).
+       Now, we combine these vectors from both heads into a single vector by concatenating them (in this case, [0.2, 0.3, 0.6, 0.4]). This final vector gives us a richer, more complete representation of "cat" because it combines both syntactical and semantic information.
+       
+       Once the outputs of all heads are combined, they are passed through a linear transformation (via a weight matrix) to project the concatenated vectors back to the desired dimensionality. The output of this process is the final, context-aware representation of each word, which can then be passed on to the next layer of the model (like in a Transformer architecture).
+       
+       In multihead attention all the above steps, transformations, 
+       ![image](https://github.com/user-attachments/assets/e1b298c9-4fd8-42c7-a25c-7b058a8af0ae)
 
        
 
