@@ -37,8 +37,7 @@ ________________________________________________________________________________
 
 *Single-Head Attention*:
 
-       1) Lets consider a sentence " Please buy an apple and orange, apple unveiled new phones". Each words in the above sentence gets turned into embeddings aka vectors.
-       2)  **LINEAR TRANSFORMATION**: These embeddings are transformed using linear transformation. the input sequence (e.g., a sentence) is transformed into queries (Q), keys (K), and values (V). These transformations are done using weight matrices. 
+       1) Lets consider a sentence " Please buy an apple and orange, apple unveiled new phones". Each words in the above sentence gets turned into embeddings aka vectors.These embeddings are transformed using linear transformation. the input sequence (e.g., a sentence) is transformed into queries (Q), keys (K), and values (V). These transformations are done using weight matrices. 
               Queries (Q): The part of the input that you want to focus on (the "question" you're asking about the input).
               keys (K): The part of the input that you're comparing the queries to (like "answers" or references for your question).
               Values (V): The actual data or information that will be passed along after attention is computed.
@@ -74,7 +73,7 @@ ________________________________________________________________________________
              The value for "mat" might provide information about the object that the cat is interacting with (the mat).
 
 
-       3) **Compute Attention Scores:**
+       2) **Compute Attention Scores:**
           Attention score are calculated with dot product of query and key vectors.
        
                         Attention score=Q⋅K where Q and K are query and key vectors.
@@ -96,7 +95,7 @@ ________________________________________________________________________________
 ![image](https://github.com/user-attachments/assets/049f8931-1bab-4c8c-aaa4-28718fff868b)
        
        
-       4) **Weighted Sum of Values:**
+       3) **Weighted Sum of Values:**
           The weighted sum of values is calculated by multiplying each word’s value (embedding) by its corresponding attention weight (after applying softmax to the attention scores).
           
 ![image](https://github.com/user-attachments/assets/d7d5a78c-ddb9-4429-b76c-f0c17a87c770)
@@ -117,9 +116,9 @@ ________________________________________________________________________________
        Once the outputs of all heads are combined, they are passed through a linear transformation (via a weight matrix) to project the concatenated vectors back to the desired dimensionality. The output of this process is the final, context-aware representation of each word, which can then be passed on to the next layer of the model (like in a Transformer architecture).
        
        In multihead attention all the above steps, transformations, 
-       ![image](https://github.com/user-attachments/assets/e1b298c9-4fd8-42c7-a25c-7b058a8af0ae)
 
-       
+![image](https://github.com/user-attachments/assets/54de38c0-0d59-4dd2-a39a-68a2d2d12a64)
+
 
 
 
