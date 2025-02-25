@@ -83,7 +83,7 @@ In the below, we see the right most seperates the apples well, so embedding scor
 5) **Weighted Sum of Values:**
    The weighted sum of values is calculated by multiplying each word’s value (embedding) by its corresponding attention weight (after applying softmax to the attention scores).
    
-                 ![image](https://github.com/user-attachments/assets/d7d5a78c-ddb9-4429-b76c-f0c17a87c770)
+   ![image](https://github.com/user-attachments/assets/d7d5a78c-ddb9-4429-b76c-f0c17a87c770)
 
 
 **Multi head attention Mechanism**:
