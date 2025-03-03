@@ -47,7 +47,7 @@ Then came the attention mechanism which gave more context with more words window
     
 ![image](https://github.com/user-attachments/assets/50a67cc1-bb53-4d8e-8242-ecdf910e9545)
 
-# Process Involved:
+# Architecture Deep Dive:
 
 ![image](https://github.com/user-attachments/assets/97c69f80-f246-4a92-8c45-bf6483f7ee80)
 
